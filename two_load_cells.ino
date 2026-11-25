@@ -30,7 +30,7 @@ void setup() {
   lcd.clear();
   
   scale_right.begin(16, 4);   // DT = GPIO 16, SCK = GPIO 4
-  scale_left.begin(18, 19);  // DT = GPIO 18, SCK = GPIO 19
+  scale_left.begin(18, 4);  // DT = GPIO 18, SCK = GPIO 19 or also 4 as the load cells can work on the same SCK pin
 
   scale_right.set_scale(calibration_factor_right);
   scale_left.set_scale(calibration_factor_left);
